@@ -1,0 +1,304 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Tina CMS tích hợp vào Hugo  - My New Hugo Site</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Tina CMS khi tích hợp với Hugo hoạt động như một hệ thống quản lý nội dung (CMS) dành cho các trang web tĩnh. Dưới đây là cơ chế hoạt động của Tina CMS đối với Hugo:
+1. Cấu trúc và Tích hợp: Tina CMS: Là một CMS cho các trang web tĩnh, cho phép người dùng chỉnh sửa nội dung trực tiếp trên giao diện người dùng của trang web." />
+  <meta name="author" content="My New Hugo Site" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.133.0">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >My New Hugo Site</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Tina CMS tích hợp vào Hugo </h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Aug 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>Tina CMS khi tích hợp với Hugo hoạt động như một hệ thống quản lý nội dung (CMS) dành cho các trang web tĩnh. Dưới đây là cơ chế hoạt động của Tina CMS đối với Hugo:</p>
+<h3 id="1-cấu-trúc-và-tích-hợp">1. Cấu trúc và Tích hợp:</h3>
+<ul>
+<li>Tina CMS: Là một CMS cho các trang web tĩnh, cho phép người dùng chỉnh sửa nội dung trực tiếp trên giao diện người dùng của trang web. Nó được tích hợp vào trang web như một phần của trang, thay vì một hệ thống CMS độc lập.</li>
+<li>Hugo: Là một static site generator (công cụ tạo trang web tĩnh), nghĩa là nó tạo ra các file HTML tĩnh từ nội dung viết bằng Markdown hoặc các ngôn ngữ đánh dấu khác, dựa trên các template được cung cấp.</li>
+</ul>
+<h3 id="2-quản-lý-nội-dung">2. Quản lý Nội dung:</h3>
+<ul>
+<li>Giao diện Chỉnh sửa: Tina CMS tạo một giao diện người dùng để chỉnh sửa nội dung của các trang Hugo. Khi người dùng đăng nhập vào phần quản trị, họ có thể chỉnh sửa nội dung trực tiếp trên giao diện trang web.</li>
+<li>Lưu trữ Nội dung: Khi bạn chỉnh sửa nội dung qua giao diện của Tina, những thay đổi này sẽ được lưu trữ trong các file nội dung của Hugo (thường là các file Markdown).</li>
+</ul>
+<h3 id="3-quản-lý-git">3. Quản lý Git:</h3>
+<ul>
+<li>Tina + Git: Khi Tina CMS được cấu hình để sử dụng với Hugo và Git (như với Git Gateway), mỗi thay đổi mà bạn thực hiện sẽ được lưu vào một commit trong Git. Điều này cho phép bạn theo dõi lịch sử thay đổi và dễ dàng triển khai các thay đổi này lên trang web.</li>
+<li>Git Gateway: Là một API của Netlify cho phép bạn sử dụng Git như backend của Tina CMS mà không cần tự quản lý server Git. Nó giúp quản lý quyền truy cập và lưu trữ các thay đổi nội dung vào kho Git.</li>
+</ul>
+<h3 id="4-triển-khai-và-phát-hành">4. Triển khai và Phát hành:</h3>
+<ul>
+<li>Tự động hóa: Khi bạn sử dụng một dịch vụ như Netlify hoặc Vercel, mỗi khi bạn commit các thay đổi vào kho Git, các dịch vụ này sẽ tự động triển khai (build và phát hành) trang web của bạn, tạo ra phiên bản mới của trang Hugo dựa trên nội dung đã cập nhật.</li>
+<li>Live Preview: Tina CMS cũng cung cấp tính năng xem trước trực tiếp những thay đổi nội dung ngay trong quá trình chỉnh sửa, giúp người dùng dễ dàng kiểm tra và điều chỉnh nội dung trước khi lưu lại các thay đổi.</li>
+</ul>
+<h3 id="5-xác-thực-và-quyền-truy-cập">5. Xác thực và Quyền truy cập:</h3>
+<ul>
+<li>Xác thực: Tina CMS có thể được cấu hình để yêu cầu người dùng xác thực trước khi chỉnh sửa nội dung, bảo đảm rằng chỉ những người có quyền mới có thể thực hiện thay đổi.</li>
+<li>Quản lý quyền: Bạn có thể thiết lập quyền truy cập dựa trên vai trò của người dùng, chẳng hạn như chỉ cho phép người quản trị chỉnh sửa nội dung, hoặc cho phép người dùng xem trước nhưng không chỉnh sửa.</li>
+</ul>
+<p>Tóm lại, Tina CMS hoạt động như một giao diện người dùng cho Hugo, giúp quản lý nội dung của các trang web tĩnh một cách dễ dàng và trực quan hơn thông qua tích hợp với Git.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/tina-docs/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Tina Docs</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:1313/posts/hello-world/"
+      ><span>Hello, World!</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2024
+    <a class="link" href="http://localhost:1313/">My New Hugo Site</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

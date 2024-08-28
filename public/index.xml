@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Aug 2024 17:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tina Docs</title>
+      <link>http://localhost:1313/posts/tina-docs/</link>
+      <pubDate>Tue, 27 Aug 2024 17:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tina-docs/</guid>
+      <description>Introduction Tina is an open-source, Git-backed headless content management system (CMS) that empowers both developers and content creators to collaborate seamlessly on a single platform. Tina enables developers to craft a custom visual editing experience perfectly tailored to their website or application while supporting a broad range of content types such as Markdown, MDX, and JSON.&#xA;Advantages of Tina&#xA;Git-based content management Tina uses Git to provide a single source of truth for content and code, enhancing collaboration between developers and content editors.</description>
+    </item>
+    <item>
+      <title>Tina CMS tích hợp vào Hugo </title>
+      <link>http://localhost:1313/posts/tina-cms-tch-hp-vo-hugo-/</link>
+      <pubDate>Mon, 26 Aug 2024 17:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tina-cms-tch-hp-vo-hugo-/</guid>
+      <description>Tina CMS khi tích hợp với Hugo hoạt động như một hệ thống quản lý nội dung (CMS) dành cho các trang web tĩnh. Dưới đây là cơ chế hoạt động của Tina CMS đối với Hugo:&#xA;1. Cấu trúc và Tích hợp: Tina CMS: Là một CMS cho các trang web tĩnh, cho phép người dùng chỉnh sửa nội dung trực tiếp trên giao diện người dùng của trang web.</description>
+    </item>
+    <item>
+      <title>Hello, World!</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>Hello World! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lorem diam. Quisque vulputate nibh sodales eros pretium tincidunt. Aenean porttitor efficitur convallis. Nulla sagittis finibus convallis. Phasellus in fermentum quam, eu egestas tortor. Maecenas ac mollis leo. Integer maximus eu nisl vel sagittis.&#xA;Suspendisse facilisis, mi ac scelerisque interdum, ligula ex imperdiet felis, a posuere eros justo nec sem. Nullam laoreet accumsan metus, sit amet tincidunt orci egestas nec.</description>
+    </item>
+  </channel>
+</rss>
